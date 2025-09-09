@@ -1,13 +1,22 @@
 let inputText = prompt("Masukkan teks:");
 
-const arrInput = inputText.split("");
-console.log(arrInput);
+function countChars(inputText) {
+    const arrInput = inputText.split("");
+    const unique = arrInput.filter((item, index) => item.indexOf(item) === index);
+    let final = {}
+    unique.map((item) => {
+  const count = arrInput.filter((data) => data === item.length);
+  final[item] = count;
+
+});
+
+}
+
+
 
 // ["h", "e", "l", "l", '"o"]
 
-const unique = inputInput.filter((item, index) => item.indexOf(item) === index)
 
-const result = unique.map(item => {
-    const count = arrInput.filter(data => data === item.length)
-    return { [item] : count }
-})
+
+
+console.log(result);
