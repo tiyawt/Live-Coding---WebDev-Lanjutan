@@ -3,7 +3,7 @@ function countChars(str) {
   const unique = arrInput.filter(
     (item, index) => arrInput.indexOf(item) === index
   );
-//   console.log(unique); //[ 'h', 'e', 'l', 'o' ]
+  //   console.log(unique); //[ 'h', 'e', 'l', 'o' ]
   let final = {};
   unique.map((item) => {
     const count = arrInput.filter((data) => data === item).length;
@@ -13,3 +13,4 @@ function countChars(str) {
 }
 
 console.log(countChars("hello"));
+console.log(countChars("aabbbcc"));
